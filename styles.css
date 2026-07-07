@@ -486,7 +486,7 @@ a {
 
 @media (min-width: 1021px) {
   .ani-page {
-    max-width: 1120px;
+    max-width: none;
     padding-right: 32px;
     padding-left: 32px;
   }
@@ -517,8 +517,9 @@ a {
   }
 
   .hero-panel {
+    max-width: 996px;
     min-height: 350px;
-    margin: 58px 58px 0;
+    margin: 58px auto 0;
     padding: 42px;
   }
 
@@ -544,8 +545,9 @@ a {
   }
 
   .feature-grid {
+    max-width: 996px;
     gap: 32px;
-    margin: 40px 58px 0;
+    margin: 40px auto 0;
   }
 
   .feature-card {
@@ -595,7 +597,8 @@ a {
   }
 
   .process-strip {
-    margin: 44px 58px 0;
+    max-width: 996px;
+    margin: 44px auto 0;
     padding: 14px;
   }
 
@@ -614,8 +617,9 @@ a {
 
   .ani-footer {
     grid-template-columns: minmax(190px, 250px) minmax(300px, 430px) minmax(190px, 230px);
+    max-width: 1100px;
     gap: 14px;
-    margin-top: 54px;
+    margin: 54px auto 0;
     padding: 14px 24px;
   }
 
