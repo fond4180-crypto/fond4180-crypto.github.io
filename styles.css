@@ -484,6 +484,174 @@ a {
   border-bottom: 2px solid currentColor;
 }
 
+@media (min-width: 1021px) {
+  .ani-page {
+    max-width: 1120px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .ani-header {
+    height: 170px;
+    margin-right: -32px;
+    margin-left: -32px;
+  }
+
+  .ani-logo {
+    width: 300px;
+  }
+
+  .ani-button {
+    top: 60px;
+    width: 164px;
+    height: 56px;
+    font-size: 16px;
+  }
+
+  .ani-button-left {
+    left: 92px;
+  }
+
+  .ani-button-right {
+    right: 92px;
+  }
+
+  .hero-panel {
+    min-height: 350px;
+    margin: 58px 58px 0;
+    padding: 42px;
+  }
+
+  .hero-kicker {
+    margin-bottom: 18px;
+    font-size: 14px;
+  }
+
+  .hero-panel h1 {
+    max-width: 760px;
+    font-size: 58px;
+  }
+
+  .hero-role {
+    margin-top: 22px;
+    font-size: 22px;
+  }
+
+  .hero-copy {
+    max-width: 660px;
+    margin-top: 22px;
+    font-size: 16px;
+  }
+
+  .feature-grid {
+    gap: 32px;
+    margin: 40px 58px 0;
+  }
+
+  .feature-card {
+    min-height: 260px;
+    padding: 34px;
+  }
+
+  .card-tag {
+    margin-bottom: 18px;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .small-card h2,
+  .tall-card h2 {
+    font-size: 46px;
+  }
+
+  .feature-card p {
+    max-width: 430px;
+    margin-top: 18px;
+    font-size: 22px;
+  }
+
+  .tall-card {
+    min-height: 560px;
+  }
+
+  .video-shell {
+    max-width: 420px;
+    margin-top: 22px;
+  }
+
+  .inline-link {
+    margin-top: 18px;
+    font-size: 13px;
+  }
+
+  .skill-list {
+    width: min(100%, 380px);
+    margin-top: 24px;
+  }
+
+  .skill-list li {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .process-strip {
+    margin: 44px 58px 0;
+    padding: 14px;
+  }
+
+  .process-strip div {
+    min-height: 86px;
+    padding: 14px;
+  }
+
+  .process-strip strong {
+    font-size: 28px;
+  }
+
+  .process-strip span {
+    font-size: 13px;
+  }
+
+  .ani-footer {
+    grid-template-columns: minmax(190px, 250px) minmax(300px, 430px) minmax(190px, 230px);
+    gap: 14px;
+    margin-top: 54px;
+    padding: 14px 24px;
+  }
+
+  .footer-box {
+    min-height: 104px;
+    padding: 12px;
+  }
+
+  .footer-box h3 {
+    font-size: 14px;
+  }
+
+  .footer-box p {
+    font-size: 13px;
+  }
+
+  .card {
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .socialContainer {
+    width: 44px;
+    height: 44px;
+  }
+
+  .socialSvg {
+    width: 16px;
+  }
+
+  .figma-links {
+    margin-top: 28px;
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 1020px) {
   .feature-grid,
   .process-strip,
