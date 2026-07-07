@@ -3,258 +3,332 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Denly | Software Developer</title>
+    <title>Denly | Software Developer Portfolio</title>
     <meta
       name="description"
-      content="Портфолио разработчика: мобильные приложения, backend, computer vision, robotics."
+      content="Портфолио разработчика: Flutter, backend, computer vision, robotics, product engineering."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Syne:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="ambient ambient-left"></div>
+    <div class="ambient ambient-right"></div>
+
     <div class="page-shell">
-      <header class="hero">
+      <header class="hero" id="top">
         <nav class="topbar">
-          <span class="brand">Denly / Developer Portfolio</span>
+          <a class="brand" href="#top">Denly / Software Developer</a>
           <div class="topbar-links">
-            <a href="#projects">Проекты</a>
-            <a href="#experience">Опыт</a>
-            <a href="#contacts">Контакты</a>
+            <a href="#work">Work</a>
+            <a href="#proof">Proof</a>
+            <a href="#design">Design</a>
+            <a href="#contact">Contact</a>
           </div>
         </nav>
 
+        <div class="status-ribbon">
+          <span class="status-dot"></span>
+          <span>Open to developer roles • Portfolio updated for applications</span>
+        </div>
+
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Flutter · FastAPI · Computer Vision · Robotics</p>
-            <h1>Разработчик, который доводит сложные инженерные проекты до рабочего результата.</h1>
+            <p class="eyebrow">Flutter · Backend · Computer Vision · Robotics</p>
+            <h1>Я делаю сложные инженерные системы понятными, рабочими и пригодными для реальных людей.</h1>
             <p class="lead">
-              Делаю прикладные продукты: мобильные приложения, backend-сервисы,
-              интеграции, распознавание объектов и CV-задачи для реальных кейсов.
+              Мой фокус — не просто написать код, а довести продукт до состояния,
+              которое можно запускать, показывать и использовать: от мобильного UI
+              до backend-логики, интеграций, CV-моделей и полевых инженерных кейсов.
             </p>
 
             <div class="hero-actions">
-              <a class="button primary" href="#projects">Смотреть проекты</a>
+              <a class="button primary" href="#work">Посмотреть проекты</a>
               <a class="button secondary" href="https://github.com/fond4180-crypto" target="_blank" rel="noreferrer">GitHub</a>
             </div>
 
-            <ul class="hero-points">
-              <li>1 место в WorldSkills Astana по мобильной робототехнике</li>
-              <li>Опыт с computer vision: распознавание объектов и детекция насилия</li>
-              <li>Full-stack разработка: от UI до backend и интеграций</li>
-            </ul>
+            <div class="hero-facts">
+              <div class="fact-pill">1 место · WorldSkills Astana</div>
+              <div class="fact-pill">Smart-living / VoIP / WebRTC</div>
+              <div class="fact-pill">Computer Vision / Object Recognition</div>
+              <div class="fact-pill">Commercial product delivery</div>
+            </div>
           </div>
 
-          <aside class="hero-card">
-            <p class="card-label">Фокус портфолио</p>
-            <h2>Shanyraq</h2>
-            <p>
-              Главный проект для показа: мобильное приложение и backend для
-              smart-living / домофонии, камер, SIP/WebRTC и серверной логики.
-            </p>
-            <dl class="metric-list">
-              <div>
-                <dt>Стек</dt>
-                <dd>Flutter, FastAPI, WebRTC, SIP, SQL</dd>
+          <aside class="hero-showcase">
+            <a
+              class="video-card"
+              href="https://youtu.be/wFVnDztt8RA?si=TBfSY63r15CCpIa1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div class="video-meta">
+                <span class="card-label">Robotics Demo</span>
+                <span class="play-pill">YouTube</span>
               </div>
-              <div>
-                <dt>Роль</dt>
-                <dd>Архитектура, мобильная часть, backend, интеграции</dd>
+              <div class="video-cover">
+                <img
+                  src="https://img.youtube.com/vi/wFVnDztt8RA/hqdefault.jpg"
+                  alt="Мобильная робототехника demo"
+                />
+                <span class="play-button">▶</span>
               </div>
-              <div>
-                <dt>Статус</dt>
-                <dd>Нужно дочистить и обновить публичную витрину</dd>
+              <h2>Mobile Robotics Demo</h2>
+              <p>
+                Реальный видеодоказанный кейс по мобильной робототехнике, который
+                усиливает портфолио сильнее любого абстрактного описания.
+              </p>
+            </a>
+
+            <div class="showcase-ledger">
+              <div class="ledger-row">
+                <span>Main public repo</span>
+                <strong>Shanyraq</strong>
               </div>
-            </dl>
+              <div class="ledger-row">
+                <span>Second public repo</span>
+                <strong>Print Sales Assistant Bot</strong>
+              </div>
+              <div class="ledger-row">
+                <span>Private case</span>
+                <strong>CRM / EDDD</strong>
+              </div>
+              <div class="ledger-row">
+                <span>Materials status</span>
+                <strong>Resume & certificate next update</strong>
+              </div>
+            </div>
           </aside>
         </div>
       </header>
 
       <main>
-        <section class="section" id="projects">
-          <div class="section-heading">
-            <p class="eyebrow">Selected Work</p>
-            <h2>Проекты, которые стоит показать работодателю</h2>
+        <section class="section work-section" id="work">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow">Selected Work</p>
+              <h2>Проекты, которые показывают мой уровень не на словах, а на результате.</h2>
+            </div>
+            <p class="section-note">
+              Я выбрал не всё подряд, а то, что реально демонстрирует инженерное
+              мышление, продуктовую ответственность и диапазон задач.
+            </p>
           </div>
 
           <div class="projects-grid">
-            <article class="project-card featured">
-              <div class="project-head">
-                <span class="tag">Главный кейс</span>
-                <h3>Shanyraq</h3>
+            <article class="project-card featured-card">
+              <div class="project-topline">
+                <span class="tag">Flagship project</span>
+                <a href="https://github.com/fond4180-crypto/shanyraq" target="_blank" rel="noreferrer">GitHub ↗</a>
               </div>
+              <h3>Shanyraq</h3>
               <p>
-                Мобильное приложение и backend для residential-tech сценариев:
-                камеры, SIP/WebRTC-звонки, серверная логика и интеграции.
+                Flutter-приложение и backend-экосистема для smart-living сценариев:
+                доступ, камеры, SIP/WebRTC-вызовы, домофонная логика и прикладной UX
+                для реального residential-tech продукта.
               </p>
-              <ul>
-                <li>Показывайте как основной engineering case</li>
-                <li>Сделайте нормальный README, скриншоты и архитектурную схему</li>
-                <li>Уберите секреты, дампы, лишние артефакты и сервисные заметки</li>
-              </ul>
-              <a href="https://github.com/fond4180-crypto/shanyraq" target="_blank" rel="noreferrer">Открыть репозиторий</a>
+              <div class="project-columns">
+                <div>
+                  <h4>Что показывает проект</h4>
+                  <ul>
+                    <li>Работу со сложной мобильной логикой и интеграциями</li>
+                    <li>Понимание прикладного продукта, а не только UI</li>
+                    <li>Умение доводить инженерный кейс до публичной витрины</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Стек</h4>
+                  <ul>
+                    <li>Flutter / Dart</li>
+                    <li>FastAPI / SQL / REST</li>
+                    <li>SIP / WebRTC / camera flows</li>
+                  </ul>
+                </div>
+              </div>
             </article>
 
             <article class="project-card">
-              <div class="project-head">
-                <span class="tag">Нужно переименовать</span>
-                <h3>nmadwwd</h3>
+              <div class="project-topline">
+                <span class="tag">AI / automation</span>
+                <a href="https://github.com/fond4180-crypto/print-sales-assistant-bot" target="_blank" rel="noreferrer">GitHub ↗</a>
               </div>
+              <h3>Print Sales Assistant Bot</h3>
               <p>
-                Текущая папка выглядит как серьёзный инженерный проект с документацией
-                для Telegram-бота и бизнес-логики. Название нужно сделать понятным.
+                Внутренний Telegram-бот для менеджеров типографии: понимание запроса,
+                deterministic pricing, published datasets и AI-assisted response flow.
               </p>
               <ul>
-                <li>Репозиторий уже переименован в понятное публичное имя</li>
-                <li>README теперь объясняет задачу, стек и инженерную логику проекта</li>
-                <li>Подходит как второй сильный backend/productivity кейс</li>
+                <li>Показывает backend/productivity engineering</li>
+                <li>Хорошо демонстрирует архитектурное мышление</li>
+                <li>Подходит как второй сильный публичный кейс</li>
               </ul>
-              <a href="https://github.com/fond4180-crypto/print-sales-assistant-bot" target="_blank" rel="noreferrer">Открыть репозиторий</a>
             </article>
 
             <article class="project-card">
-              <div class="project-head">
-                <span class="tag">Private Case</span>
-                <h3>CRM / EDDD</h3>
+              <div class="project-topline">
+                <span class="tag">Private commercial</span>
+                <span class="muted-link">Code not public</span>
               </div>
+              <h3>CRM / EDDD</h3>
               <p>
-                Большой коммерческий проект не обязательно публиковать. Для портфолио
-                достаточно отдельного кейса с описанием масштаба и вашего вклада.
+                Крупный коммерческий проект, который я не публикую целиком из-за
+                масштаба и чувствительности, но включаю в портфолио как показатель
+                реального production-опыта.
               </p>
               <ul>
-                <li>Укажите как private commercial project</li>
-                <li>Опишите модули, архитектуру и результаты без исходников</li>
-                <li>При желании добавьте 2-3 обезличенных скриншота</li>
+                <li>Большой объём проделанной работы</li>
+                <li>Архитектура, модули, бизнес-логика, рабочие процессы</li>
+                <li>Можно обсуждать на интервью без раскрытия исходников</li>
               </ul>
-              <a href="#experience">Показать в блоке опыта</a>
             </article>
 
-            <article class="project-card">
-              <div class="project-head">
-                <span class="tag">CV / Robotics</span>
-                <h3>Computer Vision & Robotics</h3>
+            <article class="project-card accent-card">
+              <div class="project-topline">
+                <span class="tag">CV / robotics case</span>
+                <a href="https://youtu.be/wFVnDztt8RA?si=TBfSY63r15CCpIa1" target="_blank" rel="noreferrer">Video ↗</a>
               </div>
+              <h3>Mobile Robotics + Vision</h3>
               <p>
-                Отдельный кейс про мобильную робототехнику, распознавание объектов и
-                проект по распознаванию насилия. Даже без открытого кода это сильная
-                часть вашего профиля.
+                Практика по мобильной робототехнике, распознаванию объектов и работе
+                с прикладными CV-задачами. Это важная часть моего профиля, даже когда
+                код проекта не лежит в открытом репозитории.
               </p>
-              <ul>
-                <li>Добавлено как инженерный и соревновательный опыт</li>
-                <li>Основано на реальной практике и результате на WorldSkills Astana</li>
-                <li>YouTube-демо можно прикрепить позже, когда будете готовы</li>
-              </ul>
-              <a href="#experience">Посмотреть кейс</a>
             </article>
           </div>
         </section>
 
-        <section class="section" id="experience">
+        <section class="section proof-section" id="proof">
           <div class="section-heading">
-            <p class="eyebrow">Experience & Achievements</p>
-            <h2>Что обязательно вынести в портфолио, кроме GitHub</h2>
+            <p class="eyebrow">Proof & Experience</p>
+            <h2>Сильные сигналы, которые работодатель видит сразу.</h2>
           </div>
 
-          <div class="timeline">
-            <article class="timeline-card">
-              <span class="timeline-year">Achievement</span>
-              <h3>WorldSkills Astana — 1 место</h3>
+          <div class="proof-grid">
+            <article class="proof-card">
+              <span class="timeline-year">WorldSkills</span>
+              <h3>1 место в WorldSkills Astana</h3>
               <p>
-                Мобильная робототехника: практическая инженерия, работа с сенсорами,
-                логикой движения и распознаванием объектов.
+                Мобильная робототехника, инженерная дисциплина, практические сценарии,
+                работа с движением, сенсорами и задачами распознавания.
               </p>
             </article>
 
-            <article class="timeline-card">
+            <article class="proof-card">
               <span class="timeline-year">Computer Vision</span>
               <h3>Проект по распознаванию насилия</h3>
               <p>
-                Отдельный кейс для портфолио: задача, подход, модель, датасет,
-                метрики и результат. Даже если код неидеален, кейс всё равно ценен.
+                Отдельный CV-кейс, который показывает, что я умею работать не только
+                с интерфейсами и backend, но и с модельно-ориентированными задачами.
               </p>
             </article>
 
-            <article class="timeline-card">
-              <span class="timeline-year">Computer Vision</span>
-              <h3>Object Recognition In Mobile Robotics</h3>
+            <article class="proof-card">
+              <span class="timeline-year">Object recognition</span>
+              <h3>Распознавание объектов в робототехнике</h3>
               <p>
-                Практика распознавания объектов в задачах мобильной робототехники.
-                На портфолио-странице это лучше показывать как engineering case с
-                коротким описанием и ссылкой на YouTube-демо.
+                Связка software + hardware + applied vision. Это особенно полезно для
+                вакансий, где ценится не только код, но и инженерное мышление в целом.
               </p>
             </article>
 
-            <article class="timeline-card">
-              <span class="timeline-year">Commercial</span>
-              <h3>Крупные private-проекты</h3>
+            <article class="proof-card wide-card">
+              <span class="timeline-year">Commercial delivery</span>
+              <h3>Опыт с private и production-проектами</h3>
               <p>
-                Можно и нужно указывать коммерческий опыт без публикации кода:
-                роль, зона ответственности, стек, сложность и достигнутый результат.
+                Не весь полезный опыт обязан быть open source. Я включаю в портфолио
+                коммерческие кейсы как evidence of delivery: что решал, какой был
+                стек, где была ответственность и какой результат удалось получить.
               </p>
             </article>
           </div>
         </section>
 
-        <section class="section" id="strategy">
-          <div class="section-heading">
-            <p class="eyebrow">Publication Strategy</p>
-            <h2>Как оформить GitHub правильно</h2>
+        <section class="section design-section" id="design">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow">Design Signal</p>
+              <h2>Figma-работы, которые усиливают мой образ как product-minded разработчика.</h2>
+            </div>
+            <p class="section-note">
+              Даже без прямого доступа к каждому макету здесь уже видно, что у меня
+              есть вкус к интерфейсу и интерес к тому, как продукт ощущается визуально.
+            </p>
           </div>
 
-          <div class="strategy-grid">
-            <article class="note-card">
-              <h3>1. GitHub профиль</h3>
-              <p>
-                Сделайте pinned-репозитории: `shanyraq`, `print-sales-assistant-bot`,
-                `fond4180-crypto.github.io` и при возможности ещё один маленький AI/CV кейс.
-              </p>
-            </article>
+          <div class="figma-grid">
+            <a class="figma-card" href="https://www.figma.com/design/EeBCUXAFsSx3Slax94jWOA/2-1?node-id=0-1&t=W3aiDbl22BSJ44kP-1" target="_blank" rel="noreferrer">
+              <span class="figma-tag">Figma file</span>
+              <h3>2 1</h3>
+              <p>Product / interface exploration</p>
+            </a>
 
-            <article class="note-card">
-              <h3>2. Отдельный GitHub Pages</h3>
-              <p>
-                Лучший вариант: отдельный репозиторий `username.github.io`, где будет
-                одна понятная страница с проектами, достижениями и контактами.
-              </p>
-            </article>
+            <a class="figma-card" href="https://www.figma.com/design/Lcu1fRSJfl5wEcJquQPLBt/Untitled?node-id=1-6&t=ZLKLFiAslgjGkipw-1" target="_blank" rel="noreferrer">
+              <span class="figma-tag">Figma file</span>
+              <h3>Untitled 01</h3>
+              <p>UI exploration and layout thinking</p>
+            </a>
 
-            <article class="note-card">
-              <h3>3. README каждого проекта</h3>
-              <p>
-                У каждого публичного репозитория должен быть понятный README:
-                задача, стек, скриншоты, архитектура и ваш вклад.
-              </p>
-            </article>
+            <a class="figma-card" href="https://www.figma.com/design/5DlfyanFzGaiPXWfDd6zkO/Untitled?node-id=32-17&t=Fv75G9q7d7GY5iEJ-1" target="_blank" rel="noreferrer">
+              <span class="figma-tag">Figma file</span>
+              <h3>Untitled 02</h3>
+              <p>Interface concepts and composition</p>
+            </a>
 
-            <article class="note-card">
-              <h3>4. Figma</h3>
-              <p>
-                Если есть сильные дизайны в Figma, добавьте ссылку или 2-3 превью как
-                proof of product thinking, особенно для `Shanyraq`. Если пока не хотите
-                светить ссылки, можно просто указать, что product/UI designs are available on request.
-              </p>
-            </article>
+            <a class="figma-card highlight-figma" href="https://www.figma.com/design/dwQcavbEa0zJNXarPzr2QW/Animation?node-id=0-1&t=YMU28geIEgQ0wEp4-1" target="_blank" rel="noreferrer">
+              <span class="figma-tag">Motion</span>
+              <h3>Animation</h3>
+              <p>Motion thinking and interaction sensitivity</p>
+            </a>
+
+            <a class="figma-card" href="https://www.figma.com/design/IZIewEdbOwO8L23HOu84e0/Untitled?node-id=0-1&t=35hgJMmVY88sAnzA-1" target="_blank" rel="noreferrer">
+              <span class="figma-tag">Figma file</span>
+              <h3>Untitled 03</h3>
+              <p>Visual experiments and interface direction</p>
+            </a>
+
+            <a class="figma-card" href="https://www.figma.com/design/wP69aLXzIXUjT7e2Fy9KKm/Untitled?node-id=0-1&t=FpDBDxTk1qOOuZBT-1" target="_blank" rel="noreferrer">
+              <span class="figma-tag">Figma file</span>
+              <h3>Untitled 04</h3>
+              <p>Additional product and UI exploration</p>
+            </a>
           </div>
         </section>
 
-        <section class="section contacts" id="contacts">
+        <section class="section contact-section" id="contact">
           <div class="section-heading">
-            <p class="eyebrow">Contacts</p>
-            <h2>Что заменить перед публикацией</h2>
+            <p class="eyebrow">Application Ready</p>
+            <h2>Что уже можно отправлять работодателю сейчас.</h2>
           </div>
 
-          <div class="contact-box">
-            <p>Сейчас уже подставлены реальные GitHub-ссылки. Дальше можно усилить страницу такими вещами:</p>
-            <ul>
-              <li>Ссылка на резюме PDF</li>
-              <li>Telegram / email / LinkedIn</li>
-              <li>YouTube-ссылка на robotics demo</li>
-              <li>Ссылки на Figma-дизайны или 2-3 превью</li>
-            </ul>
+          <div class="contact-layout">
+            <div class="contact-panel">
+              <h3>Уже готово</h3>
+              <ul>
+                <li>Публичный GitHub-профиль с двумя сильными репозиториями</li>
+                <li>Отдельная portfolio page на GitHub Pages</li>
+                <li>Кейс по робототехнике с YouTube-видео</li>
+                <li>Figma-секция как proof of product/design thinking</li>
+              </ul>
+            </div>
+
+            <div class="contact-panel emphasis-panel">
+              <h3>Что можно добавить следующим апдейтом</h3>
+              <ul>
+                <li>PDF-резюме</li>
+                <li>Контакты: Telegram / email / LinkedIn</li>
+                <li>Документ или сертификат WorldSkills</li>
+                <li>Дополнительные скриншоты или case notes по private projects</li>
+              </ul>
+              <div class="contact-actions">
+                <a class="button primary" href="https://fond4180-crypto.github.io/" target="_blank" rel="noreferrer">Открыть сайт</a>
+                <a class="button secondary" href="https://github.com/fond4180-crypto" target="_blank" rel="noreferrer">Открыть GitHub</a>
+              </div>
+            </div>
           </div>
         </section>
       </main>
