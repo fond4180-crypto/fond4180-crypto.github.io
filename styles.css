@@ -254,7 +254,7 @@ a {
 .feature-card:hover {
   background: #a90000;
   border-color: rgba(255, 180, 0, 0.6);
-  transform: translateY(-6px);
+  transform: none;
 }
 
 .proof-card {
@@ -310,6 +310,38 @@ a {
   display: block;
   border-radius: 10px;
   outline: 0;
+}
+
+.image-preview {
+  cursor: zoom-in;
+}
+
+.image-preview:hover::before,
+.image-preview:focus-visible::before {
+  content: "";
+  position: fixed;
+  z-index: 90;
+  inset: 0;
+  background: rgba(6, 0, 0, 0.82);
+  backdrop-filter: blur(5px);
+  pointer-events: none;
+}
+
+.image-preview:hover::after,
+.image-preview:focus-visible::after {
+  content: "";
+  position: fixed;
+  z-index: 91;
+  inset: clamp(18px, 4vw, 70px);
+  border: 4px solid var(--yellow);
+  border-radius: 18px;
+  background-color: var(--black);
+  background-image: var(--preview-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.65);
+  pointer-events: none;
 }
 
 .proof-gallery img,
@@ -671,40 +703,7 @@ a {
   }
 
   .proof-card {
-    min-height: 300px;
-  }
-
-  .proof-card .proof-gallery,
-  .proof-card .project-link {
-    max-height: 0;
-    margin-top: 0;
-    opacity: 0;
-    overflow: hidden;
-    pointer-events: none;
-    transform: translateY(-10px);
-    transition:
-      max-height 0.35s ease,
-      margin-top 0.35s ease,
-      opacity 0.25s ease,
-      transform 0.25s ease;
-  }
-
-  .proof-card:hover .proof-gallery,
-  .proof-card:focus-within .proof-gallery {
-    max-height: 360px;
-    margin-top: 24px;
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
-  }
-
-  .proof-card:hover .project-link,
-  .proof-card:focus-within .project-link {
-    max-height: 40px;
-    margin-top: 20px;
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
+    min-height: 470px;
   }
 
   .card-tag {
