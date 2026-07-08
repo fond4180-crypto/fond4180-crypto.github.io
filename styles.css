@@ -243,7 +243,7 @@ a {
 
 .feature-card {
   display: grid;
-  align-content: center;
+  align-content: start;
   justify-items: center;
   min-height: clamp(260px, 22vw, 320px);
   padding: clamp(24px, 3.2vw, 44px);
@@ -305,6 +305,13 @@ a {
   margin-top: 24px;
 }
 
+.proof-gallery a,
+.certificate-proof a {
+  display: block;
+  border-radius: 10px;
+  outline: 0;
+}
+
 .proof-gallery img,
 .certificate-proof img {
   display: block;
@@ -314,6 +321,12 @@ a {
   background: var(--black);
   box-shadow: 0 16px 26px rgba(0, 0, 0, 0.32);
   object-fit: cover;
+}
+
+.proof-gallery a:focus-visible img,
+.certificate-proof a:focus-visible img {
+  outline: 3px solid var(--yellow-hot);
+  outline-offset: 4px;
 }
 
 .shanyraq-gallery {
@@ -390,6 +403,10 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   border-bottom: 2px solid currentColor;
+}
+
+.project-link {
+  margin-top: 20px;
 }
 
 .skill-list {
@@ -654,7 +671,40 @@ a {
   }
 
   .proof-card {
-    min-height: 470px;
+    min-height: 300px;
+  }
+
+  .proof-card .proof-gallery,
+  .proof-card .project-link {
+    max-height: 0;
+    margin-top: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition:
+      max-height 0.35s ease,
+      margin-top 0.35s ease,
+      opacity 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  .proof-card:hover .proof-gallery,
+  .proof-card:focus-within .proof-gallery {
+    max-height: 360px;
+    margin-top: 24px;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .proof-card:hover .project-link,
+  .proof-card:focus-within .project-link {
+    max-height: 40px;
+    margin-top: 20px;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 
   .card-tag {
